@@ -4,7 +4,7 @@ public class Main {
         System.out.println("Hello world!");
         System.out.println("na lekcji programowanka");
 
-        double wylosowanaLiczba = Math.random()*100+1;
+        int wylosowanaLiczba = (int) (Math.random()*100+1);//rzutowanie
         System.out.println(wylosowanaLiczba);
     }
 }
