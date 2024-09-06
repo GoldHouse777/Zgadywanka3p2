@@ -27,20 +27,19 @@ public class Main {
         int wpisanaLiczba = klawiatura.nextInt();
 
         //instrukcja warunkowa
-        if(wpisanaLiczba == wylosowanaLiczba){
+        if (wpisanaLiczba == wylosowanaLiczba) {
             System.out.println("wygrana");
-        }
-        else{
+        } else {
             System.out.println("pudło");
         }
         //określić jak duża różnica pomiędzy wpisaną i wylosowaną
         //wyrażenie warunkowe zwraca wartość
 
-        int roznica = wpisanaLiczba >wylosowanaLiczba ? wpisanaLiczba - wylosowanaLiczba : wylosowanaLiczba - wpisanaLiczba;
-        System.out.println("Pomyłka o "+roznica);
+        int roznica = wpisanaLiczba > wylosowanaLiczba ? wpisanaLiczba - wylosowanaLiczba : wylosowanaLiczba - wpisanaLiczba;
+        System.out.println("Pomyłka o " + roznica);
 
-        roznica = roznica/10; //dzielenie całkowite
-        switch (roznica){
+        roznica = roznica / 10; //dzielenie całkowite
+        switch (roznica) {
             case 0:
                 System.out.println("Bardzo blisko");
                 break;
@@ -51,8 +50,17 @@ public class Main {
                 System.out.println("Dość blisko");
                 break;
             default:
+                System.out.println("Słabo");
         }
+        //wyrażenie switch
+        System.out.println(
+            switch  (roznica){
+                case 0->"Bardzo dobrze";
+                case 1->"Dobrze";
+                case 2->"Dość dobrze";
+                default -> "Słabo";
 
-
+            }
+        );
     }
 }
