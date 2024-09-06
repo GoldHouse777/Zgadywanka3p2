@@ -27,13 +27,17 @@ public class Main {
         int wpisanaLiczba = klawiatura.nextInt();
 
         //instrukcja warunkowa
-        if (wpisanaLiczba == wylosowanaLiczba);{
+        if(wpisanaLiczba == wylosowanaLiczba){
             System.out.println("wygrana");
         }
         else{
             System.out.println("pudło");
         }
+        //określić jak duża różnica pomiędzy wpisaną i wylosowaną
+        //wyrażenie warunkowe zwraca wartość
 
+        int roznica = wpisanaLiczba >wylosowanaLiczba ? wpisanaLiczba - wylosowanaLiczba : wylosowanaLiczba - wpisanaLiczba;
+        System.out.println("Pomyłka o "+roznica);
 
 
     }
