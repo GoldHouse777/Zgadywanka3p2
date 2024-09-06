@@ -86,5 +86,26 @@ public class Main {
         }
         while(wpisanaLiczba != wylosowanaLiczba);
         System.out.println("wygrana");
+
+        //pierwsze zadanie domowe zadanie8
+        //Wygeneruj hasło losowo. Dlugosc powinna wynosic 20 znakow
+        String haslo ="";
+        String maleLitery = "qwertyuiopasdfghjklzxcvbnm";
+        String duzeLitery = "QWERTYUIOPASDFGHJKLZXCVBNM";
+        String znakiSpecjalne = "!@#$%^&*()<>?|:}{|}{+_";
+        String cyfry = "0123456789";
+        int losowa;
+
+        for (int i = 0; i < 5; i++) {
+            losowa = (int) (Math.random()*maleLitery.length());
+            haslo = haslo + maleLitery.charAt(losowa);
+            losowa = (int) (Math.random()*maleLitery.length());
+            haslo = haslo + duzeLitery.charAt(losowa);
+            losowa = (int) (Math.random()*maleLitery.length());
+            haslo = haslo + znakiSpecjalne.charAt(losowa);
+            losowa = (int) (Math.random()*maleLitery.length());
+            haslo = haslo + cyfry.charAt(losowa);
+        }
+        System.out.println("Wygenerowane hasło: "+haslo);
     }
 }
