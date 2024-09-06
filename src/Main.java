@@ -6,7 +6,7 @@ public class Main {
         System.out.println("Hello world!");
         System.out.println("na lekcji programowanka");
 
-        int wylosowanaLiczba = (int) (Math.random()*100+1);//rzutowanie
+        int wylosowanaLiczba = (int) (Math.random() * 100 + 1);//rzutowanie
         /*
         typy proste przechowują tylko wartość
         logiczne boolean
@@ -25,6 +25,15 @@ public class Main {
         Scanner klawiatura = new Scanner(System.in);
         System.out.println("Podaj liczbę");
         int wpisanaLiczba = klawiatura.nextInt();
+
+        //instrukcja warunkowa
+        if (wpisanaLiczba == wylosowanaLiczba);{
+            System.out.println("wygrana");
+        }
+        else{
+            System.out.println("pudło");
+        }
+
 
 
     }
