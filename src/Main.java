@@ -74,18 +74,17 @@ public class Main {
         }
 
         //tak dlugo az sie uda
-        System.out.println("podaj liczbę");
-        wpisanaLiczba = klawiatura.nextInt();
-        while(wpisanaLiczba != wylosowanaLiczba){
+        do{
+            System.out.println("podaj liczbę");
+            wpisanaLiczba = klawiatura.nextInt();
             if (wpisanaLiczba>wylosowanaLiczba){
                 System.out.println("Wpisano za duzo");
             }
-            else{
+            else if(wpisanaLiczba<wylosowanaLiczba){
                 System.out.println("wpisano za mało");
             }
-            System.out.println("podaj liczbę");
-            wpisanaLiczba = klawiatura.nextInt();
         }
+        while(wpisanaLiczba != wylosowanaLiczba);
         System.out.println("wygrana");
     }
 }
