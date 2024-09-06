@@ -62,5 +62,16 @@ public class Main {
 
             }
         );
+
+        //zgadywanie 10 razy
+        for (int i = 0; i < 10; i++) {
+            System.out.println("Podaj liczbę");
+            wpisanaLiczba = klawiatura.nextInt();
+            if (wpisanaLiczba == wylosowanaLiczba){
+                System.out.println("Wygrana");
+                break;
+            }
+        }
+
     }
 }
